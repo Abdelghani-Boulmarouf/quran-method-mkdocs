@@ -1,0 +1,71 @@
+site_name: منهج التدبر
+site_description: سلسلة تمهيدية في طريقة تدبر القرآن
+site_author: ''
+site_url: ''
+
+theme:
+  name: material
+  language: ar
+  direction: rtl
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: الوضع النهاري
+
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: الوضع الليلي
+
+
+plugins:
+  - search:
+      lang: ar
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - tables
+  - def_list
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - الرئيسية: index.md
+  - مدخل السلسلة:
+      - خريطة تمهيدية: 00-introduction.md
+      - لماذا نحتاج إلى منهج؟: 01-why-method.md
+  - المحاور الكبرى:
+      - القرآن كلام الله رسمًا ونطقًا: 02-rasm-nutq.md
+      - للقرآن بنية داخلية: 03-internal-structure.md
+      - ألفاظ القرآن حق: 04-words-are-haqq.md
+      - ألفاظ القرآن مفاهيم: 05-words-as-concepts.md
+      - السورة وحدة موضوعية: 06-surah-unity.md
+      - التنزيل العملي للمعنى: 07-tanzil.md
+  - الضبط والتطبيق:
+      - القواعد العملية الجامعة: 08-derived-rules.md
+      - كيف نطبق المنهج في مجلس؟: 09-application.md
+      - تحرير المصطلحات ودرجات الكلام: 10-terms.md
+      - أسئلة وأجوبة: 11-faq.md
+      - الخلاصة في صفحة واحدة: 12-one-page-summary.md
