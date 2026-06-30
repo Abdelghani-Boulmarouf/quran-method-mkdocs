@@ -1,0 +1,81 @@
+:root {
+  --md-text-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+html,
+body {
+  direction: rtl;
+  text-align: right;
+}
+
+.md-typeset {
+  font-size: 0.92rem;
+  line-height: 1.95;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.md-typeset h1 {
+  line-height: 1.5;
+}
+
+.md-nav,
+.md-sidebar,
+.md-header,
+.md-tabs,
+.md-search__form,
+.md-search-result {
+  direction: rtl;
+  text-align: right;
+}
+
+.md-nav__title,
+.md-nav__item,
+.md-nav__link {
+  text-align: right;
+}
+
+.md-typeset ul,
+.md-typeset ol {
+  margin-right: 1.25em;
+  margin-left: 0;
+}
+
+.md-typeset blockquote {
+  border-right: .2rem solid var(--md-default-fg-color--lighter);
+  border-left: 0;
+  padding-right: 1rem;
+  padding-left: 0;
+}
+
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  text-align: right;
+}
+
+
+/* Light mode */
+[data-md-color-scheme="default"] .md-typeset h1,
+[data-md-color-scheme="default"] .md-typeset h2,
+[data-md-color-scheme="default"] .md-typeset h3,
+[data-md-color-scheme="default"] .md-typeset h4,
+[data-md-color-scheme="default"] .md-typeset h5,
+[data-md-color-scheme="default"] .md-typeset h6 {
+    color: #000;
+}
+
+/* Dark mode */
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2,
+[data-md-color-scheme="slate"] .md-typeset h3,
+[data-md-color-scheme="slate"] .md-typeset h4,
+[data-md-color-scheme="slate"] .md-typeset h5,
+[data-md-color-scheme="slate"] .md-typeset h6 {
+    color: #fff;
+}
